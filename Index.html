@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Practica N4</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="animation">
+            Sistema integrado de gestión
+        </h1>
+        <p>
+            <img id="avatar" src="IMG/avatar.jpg" alt="avatar">usuario1
+        </p>
+    </header>
+    <nav >
+        <ul>
+            <li>
+                <a href="" id="burger-icon">&#9776;</a>
+                <div class="submenu-zero">
+                    <ul id="submenu" >
+                        <li> <a href="">Inicio</a></li>
+                        <li> <a href="">Usuarios</a></li>
+                        <li> <a href="">Clientes</a></li>
+                        <li> <a href="">Proveedores</a></li>
+                        <li> <a href="">Productos</a></li>
+                        <li> <a href="">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="">Inicio</a>
+            </li>
+            <li>
+                <a href="">Usuarios</a>
+            </li>
+            <li>
+                <a href="">Clientes</a>
+            </li>
+            <li>
+                <a href="">Proveedores</a>
+            </li>
+            <li>
+                <a href="">Productos</a>
+            </li>
+        </ul>
+        <div class="navbar">
+            <form action="">
+                <label for="textbuscar">Buscar en la web</label>
+                <input type="search">
+                <button type="submit" id="Buscar">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" />
+                    </br>
+                    Buscar
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <main>
+        <form action="miservidor.com" method="POST">
+            <fieldset>
+
+                <legend> Agregar Producto </legend>
+                <label for="codigo">Código* </label>
+                <input type="tel" name="codigo" id="codigo" minlength="6" maxlength="6" pattern="[0-9]{6}"
+                    placeholder="Sólo números" required>
+                <input type="button" id="validar" value="Validar">
+
+                <br />
+
+                <label for="Nombre">Nombre* </label>
+                <input type="text" id="nombre" minlength="2" maxlength="100" pattern="[a-zA-Z]{2,10}"
+                    placeholder="Sólo letras y números" required>
+                <br />
+
+                <label for="abreviatura">Abreviatura </label>
+                <input type="text" id="abreviatura" minlength="2" maxlength="10" pattern="[a-zA-Z]{2,10}"
+                    placeholder="Sólo letras">
+                <br />
+
+                <label for="categoria">Categoría* </label>
+                <select name="categoria" id="categoria" required>
+                    <option value="lacteos">Lácteos</option>
+                    <option value="panes especiales">Panes especiales</option>
+                    <option value="pasteles">Pasteles</option>
+                </select>
+                <br />
+
+                <label for="ruc-proveedor">RUC Proveedor* </label>
+                <input type="tel" name="ruc" id="ruc" minlength="11" maxlength="11" pattern="[0-9]{11}"
+                    placeholder="Sólo números" required>
+
+                <br />
+                <label for="precio">Precio* </label>
+                <input type="number" id="precio" step="0.01" value="3" required>
+
+                <br />
+
+                <label for="color-de-etiqueta">Color de etiqueta </label>
+                <input type="color" name="color-de-etiqueta" id="color-de-etiqueta">
+
+                <br />
+
+                <label for="fecha">Fecha *</label>
+                <input type="date" id="fecha">
+
+                <br />
+
+                <label for="Estado">Estado* </label>
+
+                <input type="radio" name="estado" id="estado-activo">Activo
+                <input type="radio" name="estado" id="estado-suspendido">Suspendido
+                <input type="radio" name="estado" id="estado-de-baja">Baja
+
+                <br />
+
+                <label for="afecto-a-impuesto">Afecto a impuesto* </label>
+                <input type="checkbox" name="afecto-a-impuesto" id="afecto-a-impuesto" required>
+
+                <br />
+
+                <label for="foto">Foto </label>
+                <input type="file" id="foto" accept="image/png , image/jpg">
+
+                <br />
+
+                <label for="descripcion"> Descripción </label>
+                <textarea name="descripcion" cols="50" rows="5"></textarea>
+
+                <br />
+
+                <button type="submit"> Grabar </button>
+
+                <button type="reset"> Reset </button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.google.com/?hl=es">¿Qué hacemos?</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.google.com/?hl=es">Enlaces principales</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.google.com/?hl=es">Contáctanos</a></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
